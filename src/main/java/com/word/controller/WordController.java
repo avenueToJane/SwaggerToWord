@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 /**
- * Created by XiuYin.Cui on 2018/1/11.
+ *
  */
 @Controller
 public class WordController {
