@@ -28,7 +28,7 @@ public class WordServiceImpl implements WordService {
 
     @Override
     public List<Table> tableList() {
-        Map<String, Object> map = restTemplate.getForObject(swaggerUrl, Map.class);
+        Map<String, Object> map = restTemplate.getForObject(swaggerUrl, Map.class);//发送一个HTTP GET请求，返回的请求体将映射为一个对象
         List<Table> list = new LinkedList();
         //得到host，并添加上http 或 https
         String host = StringUtils.substringBefore(swaggerUrl, ":") + String.valueOf(map.get("host"));
